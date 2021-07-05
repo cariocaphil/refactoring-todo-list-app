@@ -33,9 +33,9 @@
 		this.defaultTemplate
 		=	'<li data-id="{{id}}" class="{{completed}}">'
 		+		'<div class="view">'
-		+			'<input class="toggle" type="checkbox" {{checked}}>'
-		+			'<label>{{title}}</label>'
-		+			'<button class="destroy"></button>'
+		+			'<input aria-label="Toggle task state" class="toggle" type="checkbox" {{checked}}>'
+		+			'<label role="textbox" contenteditable="true">{{title}}</label>'
+		+			'<button aria-label="Delete" class="destroy"></button>'
 		+		'</div>'
 		+	'</li>';
 	}
